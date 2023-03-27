@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "name": "Calculus I",
+      "grades": ["A", "B+", "B", "C+", "A"]
+    },
+    {
+      "name": "Introduction to CS",
+      "grades": ["A", "B", "C+", "A", "B-"]
+    },
+    {
+      "name": "History of Art",
+      "grades": ["B-", "C", "A-", "B", "A"]
+    },
+    {
+      "name": "Data Structures",
+      "grades": ["B+", "B", "C+", "A", "A"]
+    },
+    {
+      "name": "Algorithms",
+      "grades": ["A", "B", "B+", "C", "A"]
+    },
+    {
+      "name": "Programming Languages",
+      "grades": ["C+", "B", "B", "A", "A"]
+    },
+    {
+      "name": "Database Systems",
+      "grades": ["A", "B+", "A", "B", "C+"]
+    },
+    {
+      "name": "Computer Networks",
+      "grades": ["B", "A", "A", "C+", "B+"]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "grades": ["A", "A", "B+", "C", "A"]
+    }
+  ]
+}
