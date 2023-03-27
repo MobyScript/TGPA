@@ -1,0 +1,134 @@
+{
+  "students": [
+    {
+      "studentName": "Mobark Bacran",
+      "studentID": "201921009",
+      "courses": [
+        {
+          "name": "Calculus I",
+          "grade": "B+"
+        },
+        {
+          "name": "Introduction to CS",
+          "grade": "A+"
+        },
+        {
+          "name": "History of Art",
+          "grade": "B+"
+        },
+        {
+          "name": "Data Structures",
+          "grade": "A"
+        },
+        {
+          "name": "Algorithms",
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "studentName": "John Doe",
+      "studentID": "201921010",
+      "courses": [
+        {
+          "name": "Calculus I",
+          "grade": "A+"
+        },
+        {
+          "name": "Introduction to CS",
+          "grade": "B+"
+        },
+        {
+          "name": "History of Art",
+          "grade": "B"
+        },
+        {
+          "name": "Data Structures",
+          "grade": "B+"
+        },
+        {
+          "name": "Algorithms",
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "studentName": "Jane Smith",
+      "studentID": "201921011",
+      "courses": [
+        {
+          "name": "Calculus I",
+          "grade": "B"
+        },
+        {
+          "name": "Introduction to CS",
+          "grade": "A"
+        },
+        {
+          "name": "History of Art",
+          "grade": "A+"
+        },
+        {
+          "name": "Data Structures",
+          "grade": "B+"
+        },
+        {
+          "name": "Algorithms",
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "studentName": "Sarah Johnson",
+      "studentID": "201921012",
+      "courses": [
+        {
+          "name": "Calculus I",
+          "grade": "A"
+        },
+        {
+          "name": "Introduction to CS",
+          "grade": "A+"
+        },
+        {
+          "name": "History of Art",
+          "grade": "B+"
+        },
+        {
+          "name": "Data Structures",
+          "grade": "B"
+        },
+        {
+          "name": "Algorithms",
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "studentName": "Michael Brown",
+      "studentID": "201921013",
+      "courses": [
+        {
+          "name": "Calculus I",
+          "grade": "B+"
+        },
+        {
+          "name": "Introduction to CS",
+          "grade": "B"
+        },
+        {
+          "name": "History of Art",
+          "grade": "A+"
+        },
+        {
+          "name": "Data Structures",
+          "grade": "A"
+        },
+        {
+          "name": "Algorithms",
+          "grade": "B+"
+        }
+      ]
+    }
+  ]
+}
