@@ -6,11 +6,11 @@
     },
     {
       "name": "Introduction to CS",
-      "grades": ["A", "B", "C+", "A", "B-"]
+      "grades": ["A", "B", "C+", "A", "B"]
     },
     {
       "name": "History of Art",
-      "grades": ["B-", "C", "A-", "B", "A"]
+      "grades": ["B", "C", "A", "B", "A"]
     },
     {
       "name": "Data Structures",

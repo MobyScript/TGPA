@@ -18,7 +18,7 @@ function GetDifficulty(Course) {
   }
 }
 // Calculus I
-console.log(Courses.courses[0]);
+console.log(Courses.courses[0].grades.length);
 // Introduction to CS
 console.log(Courses.courses[1]);
 // History of Art
@@ -36,9 +36,14 @@ console.log(Courses.courses[7]);
 // Artificial Intelligence
 console.log(Courses.courses[8]);
 
-// Hashmap of Grades and total value
+/////////////////////////////////
+//Formula to get average grade//
+///////////////////////////////
+let value = 0;
 
-let grade = "A+";
-console.log(Grades[grade]);
+for (let i = 0; i < Courses.courses[2].grades.length; i++) {
+  value = value + Grades[Courses.courses[2].grades[i]];
+}
 
-GetDifficulty(Courses.courses[0]);
+let average = value / Courses.courses[0].grades.length;
+console.log(average);
