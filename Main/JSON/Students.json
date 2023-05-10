@@ -1,6 +1,6 @@
 {
-  "students": [
-    {
+  "students": {
+    "201921009": {
       "studentName": "Mobark Bacran",
       "studentID": "201921009",
       "courses": [
@@ -26,7 +26,7 @@
         }
       ]
     },
-    {
+    "201921010": {
       "studentName": "John Doe",
       "studentID": "201921010",
       "courses": [
@@ -52,7 +52,7 @@
         }
       ]
     },
-    {
+    "201921011": {
       "studentName": "Jane Smith",
       "studentID": "201921011",
       "courses": [
@@ -78,7 +78,7 @@
         }
       ]
     },
-    {
+    "201921012": {
       "studentName": "Sarah Johnson",
       "studentID": "201921012",
       "courses": [
@@ -104,7 +104,7 @@
         }
       ]
     },
-    {
+    "201921013": {
       "studentName": "Michael Brown",
       "studentID": "201921013",
       "courses": [
@@ -130,5 +130,5 @@
         }
       ]
     }
-  ]
+  }
 }

@@ -12,18 +12,18 @@
       <div>
         <h1>Welcome to TGPA</h1>
         <p>Student ID</p>
-        <input type="text" />
+        <input id="StudentID" type="number" required />
         <div>
-          <p>Target GPA</p>
-          <input type="number" />
+          <div>
+            <p>Target GPA</p>
+            <input id="GPA" type="number" required />
+          </div>
+          <button onclick="getInfo()">Submit</button>
         </div>
-        <div>
-          <button id="button">Submit</button>
-        </div>
-        <div id="UserInfomration"></div>
       </div>
     </div>
 
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="Course.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
