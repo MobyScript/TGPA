@@ -1,0 +1,30 @@
+/* Center Container */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Text */
+p {
+  text-align: center;
+  size: 20px;
+}
+
+/* Centering input and button */
+/* And Margin */
+
+input,
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+}
