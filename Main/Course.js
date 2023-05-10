@@ -51,8 +51,8 @@ console.log(Courses.courses[0].name);
 //   Function for students    //
 ///////////////////////////////
 
-export function StudentAverage(ID) {
-  let Student = Students.students["201921009"];
+export const StudentAverage = (ID) => {
+  let Student = Students.students[ID];
   let Name = Student.studentName;
   let stdID = Student.studentID;
 
@@ -63,6 +63,4 @@ export function StudentAverage(ID) {
 
   let average = value / Student.courses.length;
   console.log(Name, average);
-}
-
-StudentAverage();
+};
