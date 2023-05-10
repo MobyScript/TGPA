@@ -12,6 +12,7 @@ const getInfo = (value) => {
     window.alert("Please fill up everything");
   } else {
     StudentAverage(ID);
+    window.location.href = "./Courses.html";
   }
   console.log("Student ID :" + ID + "  /  " + "Target GPA" + TARGET);
 };

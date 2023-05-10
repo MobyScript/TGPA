@@ -65,5 +65,27 @@ export const StudentAverage = (ID) => {
     }
     let average = value / Student.courses.length;
     console.log(Name, average);
+
+    switch (average) {
+      case 95:
+      case 90:
+        console.log("You are smart");
+        break;
+
+      case 85:
+      case 80:
+        console.log("You are good");
+        break;
+
+      case 75:
+      case 70:
+        console.log("You are average");
+        break;
+
+      case 65:
+      case 60:
+        console.log("You are fine");
+        break;
+    }
   }
 };
