@@ -52,15 +52,18 @@ console.log(Courses.courses[0].name);
 ///////////////////////////////
 
 export const StudentAverage = (ID) => {
-  let Student = Students.students[ID];
-  let Name = Student.studentName;
-  let stdID = Student.studentID;
+  if (Students.students[ID] == undefined) {
+    window.alert("Please check your ID");
+  } else {
+    let Student = Students.students[ID];
+    let Name = Student.studentName;
+    let stdID = Student.studentID;
 
-  let value = 0;
-  for (let i = 0; i < Student.courses.length; i++) {
-    value = value + Grades[Student.courses[i].grade];
+    let value = 0;
+    for (let i = 0; i < Student.courses.length; i++) {
+      value = value + Grades[Student.courses[i].grade];
+    }
+    let average = value / Student.courses.length;
+    console.log(Name, average);
   }
-
-  let average = value / Student.courses.length;
-  console.log(Name, average);
 };
