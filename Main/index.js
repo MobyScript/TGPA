@@ -10,9 +10,11 @@ const getInfo = (value) => {
 
   if (ID.length <= 9 && TARGET.length <= 2) {
     window.alert("Please fill up everything");
-  } else {
+  } else if (ID.length >= 9 && TARGET.length >= 2) {
     StudentAverage(ID);
     window.location.href = "./Courses.html";
+  } else {
+    StudentAverage(ID);
   }
   console.log("Student ID :" + ID + "  /  " + "Target GPA" + TARGET);
 };
