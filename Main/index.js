@@ -6,11 +6,9 @@ import { StudentAverage } from "./Course.js";
 
 const getInfo = () => {
   let ID = document.getElementById("StudentID").value;
-  let TARGET = document.getElementById("GPA").value;
-  if (ID.length <= 8) {
-    window.alert("Please fill up everything");
-  } else if (ID.length == 9) {
-    window.location.href = "./Courses.html";
+
+  if (ID.length == 8) {
+    window.alert("Please fill up the ID");
   } else {
     window.location.href = "./Courses.html";
   }
@@ -21,13 +19,18 @@ const StudentID = document.getElementById("StudentID");
 const GPA = document.getElementById("GPA");
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const StudentIDValue = StudentID.value;
-  const GPAValue = GPA.value;
-  localStorage.setItem("first-name", StudentIDValue);
-  localStorage.setItem("last-name", GPAValue);
-  getInfo();
-  console.log(StudentIDValue);
+  //On submit
+  e.preventDefault(); // function to not erase below values
+
+  const StudentIDValue = StudentID.value; //Variable to store Student ID
+  // const GPAValue = GPA.value; // Variable to store GPA value (Not needed atm)
+
+  localStorage.setItem("first-name", StudentIDValue); //Storing The Student ID locally using "first-name"
+  // localStorage.setItem("GPA", GPAValue); //Storing The Student GPA locally using "GPA"
+
+  getInfo(); //Run getINFO function
 });
+
+// These help us to define functions because Module functions are not recognized
 window.StudentAverage = StudentAverage;
 window.getInfo = getInfo;
