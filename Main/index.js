@@ -4,20 +4,29 @@
 
 import { StudentAverage } from "./Course.js";
 
-const getInfo = (value) => {
+const getInfo = () => {
   let ID = document.getElementById("StudentID").value;
   let TARGET = document.getElementById("GPA").value;
-
-  if (ID.length <= 9 && TARGET.length <= 2) {
+  if (ID.length <= 8) {
     window.alert("Please fill up everything");
-  } else if (ID.length >= 9 && TARGET.length >= 2) {
-    StudentAverage(ID);
+  } else if (ID.length == 9) {
     window.location.href = "./Courses.html";
   } else {
-    StudentAverage(ID);
+    window.location.href = "./Courses.html";
   }
-  console.log("Student ID :" + ID + "  /  " + "Target GPA" + TARGET);
 };
 
+const form = document.getElementById("form");
+const StudentID = document.getElementById("StudentID");
+const GPA = document.getElementById("GPA");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const StudentIDValue = StudentID.value;
+  const GPAValue = GPA.value;
+  localStorage.setItem("first-name", StudentIDValue);
+  localStorage.setItem("last-name", GPAValue);
+  getInfo();
+});
 window.StudentAverage = StudentAverage;
 window.getInfo = getInfo;

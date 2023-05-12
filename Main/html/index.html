@@ -9,18 +9,20 @@
   </head>
   <body>
     <div class="container">
-      <div>
+      <form id="form">
         <h1>Welcome to TGPA</h1>
         <p>Student ID</p>
+
         <input id="StudentID" type="number" required />
-        <div>
-          <div>
-            <p>Target GPA</p>
-            <input id="GPA" type="number" required />
-          </div>
-          <button onclick="getInfo()">Submit</button>
-        </div>
-      </div>
+        <p>Target GPA</p>
+        <!-- <input id="GPA" type="number" required /> -->
+        <select name="" id="GPA">
+          <option value="4.0">4.0</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
     </div>
 
     <script type="module" src="../index.js"></script>

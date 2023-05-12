@@ -51,6 +51,9 @@ console.log(Courses.courses[0].name);
 //   Function for students    //
 ///////////////////////////////
 
+const getStudentIDValue = localStorage.getItem("Student_ID");
+const getStudentGPAValue = localStorage.getItem("Student_GPA");
+
 export const StudentAverage = (ID) => {
   if (Students.students[ID] == undefined) {
     window.alert("Please check your ID");
@@ -64,28 +67,38 @@ export const StudentAverage = (ID) => {
       value = value + Grades[Student.courses[i].grade];
     }
     let average = value / Student.courses.length;
-    console.log(Name, average);
-
+    for (let i = 0; i < 200000; i++) {}
     switch (average) {
       case 95:
       case 90:
-        console.log("You are smart");
+        document.getElementById("StudentName").innerHTML = Name;
+        document.getElementById("StudentID").innerHTML = stdID;
         break;
 
       case 85:
       case 80:
-        console.log("You are good");
+        document.getElementById("StudentName").innerHTML = Name;
+        document.getElementById("StudentID").innerHTML = stdID;
         break;
 
       case 75:
       case 70:
-        console.log("You are average");
+        document.getElementById("StudentName").innerHTML = Name;
+        document.getElementById("StudentID").innerHTML = stdID;
         break;
 
       case 65:
       case 60:
-        console.log("You are fine");
+        document.getElementById("StudentName").innerHTML = Name;
+        document.getElementById("StudentID").innerHTML = stdID;
         break;
     }
   }
 };
+
+function X() {
+  console.log(getStudentIDValue);
+  StudentAverage(getStudentIDValue);
+}
+
+window.X = X;

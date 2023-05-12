@@ -18,13 +18,17 @@ p {
 /* And Margin */
 
 input,
-button {
+button,
+select,
+option {
   display: block;
   margin: 0 auto;
   margin-top: 10px;
 }
 
-input {
+input,
+select,
+option {
   width: 100%;
   text-align: center;
 }
