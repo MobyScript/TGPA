@@ -94,13 +94,14 @@ const CourseAverage = () => {
 
     //Getting the average of the numbers
     let average = value / Courses.courses[j].grades.length;
-    if (StudentTotalAverage > average) {
+    if (StudentTotalAverage < average) {
       const div = document.createElement("div"); // create new div element
       div.textContent = Courses.courses[j].name;
+      div.style.marginTop = "20px";
       courseList.appendChild(div);
 
       const CourseAverage = document.createElement("div"); // create new div element
-      CourseAverage.textContent = average;
+      CourseAverage.textContent = `Percentage of Pass: ${average}%`;
       courseList.appendChild(CourseAverage);
     }
   }
