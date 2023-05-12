@@ -35,6 +35,26 @@
     {
       "name": "Artificial Intelligence",
       "grades": ["A", "A", "B+", "C", "A"]
+    },
+    {
+      "name": "Operating Systems",
+      "grades": ["C+", "C", "D", "D+", "C"]
+    },
+    {
+      "name": "Computer Architecture",
+      "grades": ["D+", "D", "C", "C+", "C+"]
+    },
+    {
+      "name": "Digital Signal Processing",
+      "grades": ["C", "D", "C+", "D+", "D+"]
+    },
+    {
+      "name": "Database Management",
+      "grades": ["D", "C", "C+", "D+", "C"]
+    },
+    {
+      "name": "Object-Oriented Design",
+      "grades": ["C+", "D", "C", "D+", "C+"]
     }
   ]
 }
