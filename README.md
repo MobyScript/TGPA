@@ -8,5 +8,5 @@ Then we compare the both averages and if the Student's average is higher than a 
 We want the student to acheive a high GPA without them being scared if the courses during the semester are hard or not
 
 <h2>Simple Design</h2>
-![image](https://github.com/MobyScript/TGPA/assets/90425990/105b54ca-2fb0-4918-a58c-7d9df568bed3)
-
+<img src="https://github.com/MobyScript/TGPA/assets/90425990/105b54ca-2fb0-4918-a58c-7d9df568bed3" />
+<img src="https://media.discordapp.net/attachments/925653733801615370/1106635708682215534/image.png?width=810&height=456" />
