@@ -66,39 +66,53 @@ export const StudentAverage = (ID) => {
     for (let i = 0; i < Student.courses.length; i++) {
       value = value + Grades[Student.courses[i].grade];
     }
-    let average = value / Student.courses.length;
-    for (let i = 0; i < 200000; i++) {}
-    switch (average) {
-      case 95:
-      case 90:
-        document.getElementById("StudentName").innerHTML = Name;
-        document.getElementById("StudentID").innerHTML = stdID;
-        break;
+    let StudentAverage = value / Student.courses.length;
 
-      case 85:
-      case 80:
-        document.getElementById("StudentName").innerHTML = Name;
-        document.getElementById("StudentID").innerHTML = stdID;
-        break;
+    //Switch statement to print out details of the student
 
-      case 75:
-      case 70:
-        document.getElementById("StudentName").innerHTML = Name;
-        document.getElementById("StudentID").innerHTML = stdID;
-        break;
-
-      case 65:
-      case 60:
-        document.getElementById("StudentName").innerHTML = Name;
-        document.getElementById("StudentID").innerHTML = stdID;
-        break;
-    }
+    document.getElementById("StudentName").innerHTML = Name;
+    document.getElementById("StudentID").innerHTML = stdID;
+    document.getElementById("StudentAVG").innerHTML = `${StudentAverage}%`;
+    let StudentTotalAverage = StudentAverage;
+    localStorage.setItem("StudentTotalAverage", StudentTotalAverage);
   }
 };
+const StudentTotalAverage = localStorage.getItem("StudentTotalAverage");
+console.log(StudentTotalAverage);
 
 function X() {
-  console.log(getStudentIDValue);
+  // Run Student Average Function
   StudentAverage(getStudentIDValue);
+  // Declare of Variables
+
+  // Get Courses to run and get average
+  const courseList = document.getElementById("CourseList"); // get the div element with id "CourseList"
+
+  for (let j = 0; j < Courses.courses.length; j++) {
+    let value = 0;
+    //
+
+    // Get Names
+    const div = document.createElement("div"); // create new div element
+    div.textContent = Courses.courses[j].name;
+    courseList.appendChild(div);
+
+    // Getting average
+
+    for (let i = 0; i < Courses.courses[j].grades.length; i++) {
+      value = value + Grades[Courses.courses[j].grades[i]];
+      // courseList.appendChild(div);
+    }
+
+    // After Loop get Average of the Course
+
+    let average = value / Courses.courses[j].grades.length;
+    if (StudentTotalAverage < average) {
+      const CourseAverage = document.createElement("div"); // create new div element
+      CourseAverage.textContent = average;
+      courseList.appendChild();
+    }
+  }
 }
 
 window.X = X;
