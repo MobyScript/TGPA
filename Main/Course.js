@@ -108,7 +108,8 @@ const CourseAverage = () => {
 };
 
 function X() {
-  StudentAverage(201921014);
+  const ID = localStorage.getItem("first-name");
+  StudentAverage(ID);
   CourseAverage();
 }
 

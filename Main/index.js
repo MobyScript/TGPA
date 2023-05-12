@@ -27,6 +27,7 @@ form.addEventListener("submit", function (e) {
   localStorage.setItem("first-name", StudentIDValue);
   localStorage.setItem("last-name", GPAValue);
   getInfo();
+  console.log(StudentIDValue);
 });
 window.StudentAverage = StudentAverage;
 window.getInfo = getInfo;
