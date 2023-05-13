@@ -3,6 +3,7 @@
 ///////////////////////////////
 
 import { StudentAverage } from "./Course.js";
+import Students from "./JSON/Students.json" assert { type: "json" };
 
 const getInfo = () => {
   let ID = document.getElementById("StudentID").value;
@@ -28,7 +29,13 @@ form.addEventListener("submit", function (e) {
   localStorage.setItem("first-name", StudentIDValue); //Storing The Student ID locally using "first-name"
   // localStorage.setItem("GPA", GPAValue); //Storing The Student GPA locally using "GPA"
 
-  getInfo(); //Run getINFO function
+  let ID = document.getElementById("StudentID").value;
+
+  if (Students.students[ID]) {
+    window.location.href = "./Courses.html";
+  } else {
+    window.alert("Please fill up the ID");
+  }
 });
 
 // These help us to define functions because Module functions are not recognized
